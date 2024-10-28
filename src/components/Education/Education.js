@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 
 function Education(props) {
     const nonThemeColor = useSelector(state => state.nonThemeColor);
-    const uiColor=useSelector(state=>state.uiColor);
+    // const uiColor=useSelector(state=>state.uiColor);
 
     const languagesDone=EducationData.codingStatus;
     return (
