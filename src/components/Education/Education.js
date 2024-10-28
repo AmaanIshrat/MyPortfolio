@@ -19,7 +19,7 @@ function Education(props) {
                     <img src={EducationImg} alt="" srcset="" />
                 </div>
                 <div className={classes.educationCard}>
-                    <h1 style={{color:uiColor}}></h1>
+                    {/* <h1 style={{color:uiColor}}></h1> */}
                     <h2 style={{ color: nonThemeColor }}>Coding Statistics and Certifications</h2>
                     <div className={classes.codingInfo}>
                         {
