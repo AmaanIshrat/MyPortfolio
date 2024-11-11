@@ -16,8 +16,16 @@ const languagesDone = [
         percentDone: 70
     },
     {
-        name: 'Talwind',
+        name: 'Tailwind',
         percentDone: 70
+    },
+    {
+        name: 'Git',
+        percentDone: 70
+    },
+    {
+        name: 'GitHub',
+        percentDone: 80
     },
 ]
 const EducationData={
