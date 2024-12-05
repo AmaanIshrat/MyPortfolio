@@ -135,3 +135,48 @@ main{
         margin: 2rem auto;
     }
 }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .homeContent {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .avatarImage {
+      margin-top: 20px;
+    }
+  
+    .greeting {
+      font-size: 2.5rem;
+    }
+  
+    .autoText {
+      font-size: 1.3rem;
+    }
+  
+    .connectText {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Extra Small Devices (Mobile) */
+  @media (max-width: 480px) {
+    .greeting {
+      font-size: 2rem;
+    }
+  
+    .autoText {
+      font-size: 1.2rem;
+    }
+  
+    .connectText {
+      font-size: 0.9rem;
+    }
+  
+    .avatarImage img {
+      width: 120px;
+      height: 120px;
+    }
+  }
