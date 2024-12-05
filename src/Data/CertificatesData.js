@@ -9,6 +9,11 @@ let certificationsList=[
         
         platform:'udemy'
     },
+    {
+        title:".Net Development",
+        
+        platform:'udemy'
+    },
    
    
 ];

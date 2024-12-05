@@ -27,6 +27,11 @@ const languagesDone = [
         name: 'GitHub',
         percentDone: 80
     },
+    {
+        name: 'Angular',
+        percentDone: 80
+    },
+    
 ]
 const EducationData={
     collegeName:"Sparkup Technology Pvt Ltd",
