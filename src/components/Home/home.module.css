@@ -52,17 +52,46 @@ main{
     font-size: 2rem;
     font-weight: 600;
 }
-.avatarImage{
+.avatarImage {
     margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* animation: renderFromRight 1s ease forwards; */
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
 }
-.avatarImage img{
+
+.avatarImage img {
+    width: 30rem; /* You can adjust this as needed */
     height: 30rem;
-    object-fit:cover;
+    object-fit: cover;
+    border-radius: 50%; /* Circular border */
+    border: 6px solid rgba(138, 43, 226, 1) ; /* Transparent border for gradient effect */
+     /* Vibrant gradient border */
+    background-origin: border-box; /* Ensures the gradient only affects the border */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1); /* Multiple shadows for depth */
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out, opacity 0.4s ease-in-out; /* Smooth hover effects */
+    filter: brightness(1.1); /* Slight brightness enhancement */
 }
+
+.avatarImage img:hover {
+    transform: scale(1.15); /* Bigger zoom effect */
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3), 0 8px 20px rgba(0, 0, 0, 0.1); /* Larger shadow on hover */
+    filter: brightness(1.2) saturate(1.2); /* Enhance brightness and saturation on hover */
+    opacity: 0.95; /* Slight opacity change for a more dynamic hover effect */
+    transform: rotate(2deg); /* Small rotation effect to add interest */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .connectText{
     margin-top: 2rem;
     font-size: 1.5rem;

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Typewriter from 'typewriter-effect/dist/core';
-import profileAvatar from "../asset/logo.png";
+// import profileAvatar from "../asset/logo.png";
+// import myImage from "../assets/myimg.jpeg";
+import myImage from "../asset/myimg.png";
 import PersonalData from "../../Data/PersonalData";
 import classes from "./home.module.css";
 import { autoTypeData } from "../../Data/PersonalData";
@@ -43,7 +45,7 @@ function Home(props) {
                 <SocialLinks className={classes.links} />
             </div>
             <div className={classes.avatarImage}>
-                <img src={profileAvatar} alt="" srcSet="" />
+            <img src={myImage} alt="My Avatar" />
             </div>
         </main>
     )
